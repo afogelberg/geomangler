@@ -1,3 +1,7 @@
+global.window = {};
+global.navigator = {
+  userAgent: ''
+};
 var manglers = require('./lib/manglers');
 var helpers = require('./lib/helpers/helpers');
 
