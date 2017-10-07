@@ -1,7 +1,7 @@
 {
   "name": "geomangler",
   "version": "1.0.0",
-  "description": "Geomangler is a utility library to process and transform geodata, especially useful to prepare data for the web",
+  "description": "Geomangler is a utility library to process and transform geodata",
   "main": "geomangler.js",
   "scripts": {
     "build-ol": "babel node_modules/ol --out-dir node_modules/ol",
