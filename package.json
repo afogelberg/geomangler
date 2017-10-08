@@ -1,6 +1,6 @@
 {
   "name": "geomangler",
-  "version": "1.0.2",
+  "version": "1.0.1",
   "description": "Geomangler is a utility library to process and transform geodata",
   "keywords": [
     "mapping",
@@ -19,7 +19,9 @@
     "url": "https://github.com/afogelberg/geomangler.git"
   },
   "scripts": {
-    "build-ol": "babel node_modules/ol --out-dir node_modules/ol"
+    "build-ol": "babel node_modules/ol --out-dir node_modules/ol",
+    "preinstall": "npm install --ignore-scripts",
+    "postinstall": "npm run build-ol"
   },
   "babel": {
     "presets": [
