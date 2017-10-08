@@ -11,6 +11,7 @@
     "topojson"
   ],
   "main": "geomangler.js",
+  "engines" : { "node" : ">=6.0.0" },
   "scripts": {
     "build-ol": "babel node_modules/ol --out-dir node_modules/ol",
     "postinstall": "npm run build-ol"
