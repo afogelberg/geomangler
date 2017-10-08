@@ -1,4 +1,7 @@
 # Manglers
+Manglers always return a collection of features and reset the current feature collection.
+
+---
 
 <a id="buffer">#</a> **buffer**(radius, options) [<>](https://github.com/afogelberg/geomangler/blob/master/lib/manglers/buffer.js)<br>
 Returns buffered features of points. Buffer can be either circle or square.  
