@@ -46,5 +46,5 @@ gm.save('geojson', 'out file name', {
 
 ### [Helpers](https://github.com/afogelberg/geomangler/blob/master/docs/helpers.md)
 
-* [getFieldNames](https://github.com/afogelberg/geomangler/blob/master/docs/getfieldnames.md#buffer) - get field names.
-* [getUniqueValues](https://github.com/afogelberg/geomangler/blob/master/docs/getuniquevalues.md#buffer) - get unique values from field.
+* [getFieldNames](https://github.com/afogelberg/geomangler/blob/master/docs/helpers.md#getfieldnames) - get field names.
+* [getUniqueValues](https://github.com/afogelberg/geomangler/blob/master/docs/helpers.md#getuniquevalues) - get unique values from field.
