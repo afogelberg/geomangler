@@ -1,11 +1,25 @@
 # Geomangler
-Geomangler is a utility library to process and transform geodata in Node.js.
+Geomangler is a utility library to process and transform geodata in Node.js. This is a small weight and fast alternative to for example FME.
 
 # Installing
 Git and Node.js (6 or higher) is required.
 
 1. Clone the repository: `git clone https://github.com/afogelberg/geomangler.git`
 2. Install with npm: `npm install`
+
+# Getting started
+It's easy to get started. Just require geomangler and start to mangle your geodata, as in this example.
+```
+var gm = require('./geomangler');
+
+gm.add('GeoJson', 'in file name');
+gm.buffer(5);
+gm.save('GeoJson', 'out file name', {
+  path: './',
+  epsgCode: 'EPSG:3010'
+});
+
+```
 
 # Api reference
 
