@@ -4,8 +4,7 @@ Geomangler is a utility library to process and transform geodata in Node.js. Thi
 # Installing
 Git and Node.js (6 or higher) is required.
 
-1. `npm install geomangler`
-2. `npm run build-ol`
+```npm install geomangler```
 
 or
 
