@@ -12,9 +12,9 @@ It's easy to get started. Just require geomangler and start to mangle your geoda
 ```
 var gm = require('./geomangler');
 
-gm.add('GeoJson', 'in file name');
+gm.add('geojson', 'in file name');
 gm.buffer(5);
-gm.save('GeoJson', 'out file name', {
+gm.save('geojson', 'out file name', {
   path: './',
   epsgCode: 'EPSG:3010'
 });
