@@ -2,6 +2,14 @@
   "name": "geomangler",
   "version": "1.0.0",
   "description": "Geomangler is a utility library to process and transform geodata",
+  "keywords": [
+    "mapping",
+    "openlayers",
+    "geodata",
+    "manglers",
+    "geojson",
+    "topojson"
+  ],
   "main": "geomangler.js",
   "scripts": {
     "build-ol": "babel node_modules/ol --out-dir node_modules/ol",
