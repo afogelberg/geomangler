@@ -4,7 +4,9 @@ Geomangler is a utility library to process and transform geodata in Node.js. Thi
 # Installing
 Git and Node.js (6 or higher) is required.
 
-```npm install geomangler```
+```
+npm install geomangler
+```
 
 or
 
@@ -14,7 +16,7 @@ or
 # Getting started
 It's easy to get started. Just require geomangler and start to mangle your geodata, as in this example.
 ```
-var gm = require('./geomangler');
+var gm = require('geomangler');
 
 gm.add('geojson', 'in file name');
 gm.buffer(5);
