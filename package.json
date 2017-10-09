@@ -1,6 +1,6 @@
 {
   "name": "geomangler",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Geomangler is a utility library to process and transform geodata",
   "keywords": [
     "mapping",
