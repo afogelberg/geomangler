@@ -38,6 +38,7 @@ gm.save('geojson', 'out file name', {
 
 * [buffer](https://github.com/afogelberg/geomangler/blob/master/docs/manglers.md#buffer) - buffer points.
 * [changeCase](https://github.com/afogelberg/geomangler/blob/master/docs/manglers.md#changecase) - changes case.
+* [changeGeometryType](https://github.com/afogelberg/geomangler/blob/master/docs/manglers.md#changegeometrytype) - change geometry type.
 * [deleteFields](https://github.com/afogelberg/geomangler/blob/master/docs/manglers.md#deletefields) - deletes fields.
 * [filterByText](https://github.com/afogelberg/geomangler/blob/master/docs/manglers.md#filterbytext) - filter features by text.
 * [joinFeatures](https://github.com/afogelberg/geomangler/blob/master/docs/manglers.md#joinfeatures) - join features by common field

@@ -28,6 +28,19 @@ fields | Array of fields to change case. Default is all fields. <br>
 
 ---
 
+<a id="changegeometrytype">#</a> **changeGeometryType**(source, destination, options) [<>](https://github.com/afogelberg/geomangler/blob/master/lib/manglers/changegeometrytype.js)<br>
+Returns features with changed geometry type.
+
+**Parameters**<br>
+`source`<br>
+The current geometry type. Currently multipolygon is available.<br>
+`destination`<br>
+The destination geometry type to change to. Currently polygon is available.<br>
+`options` *optional object*<br>
+features | Optional features to use.<br>
+
+---
+
 <a id="deletefields">#</a> **deleteFields**(fields, options) [<>](https://github.com/afogelberg/geomangler/blob/master/lib/manglers/deletefields.js)<br>
 Returns features with deleted fields.  
 
