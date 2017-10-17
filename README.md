@@ -43,6 +43,7 @@ gm.save('geojson', 'out file name', {
 * [filterByText](https://github.com/afogelberg/geomangler/blob/master/docs/manglers.md#filterbytext) - filter features by text.
 * [joinFeatures](https://github.com/afogelberg/geomangler/blob/master/docs/manglers.md#joinfeatures) - join features by common field
 * [merge](https://github.com/afogelberg/geomangler/blob/master/docs/manglers.md#merge) - merge feature collections
+* [move](https://github.com/afogelberg/geomangler/blob/master/docs/manglers.md#move) - move features
 * [renameFields](https://github.com/afogelberg/geomangler/blob/master/docs/manglers.md#renameFields) - rename fields
 * [replaceText](https://github.com/afogelberg/geomangler/blob/master/docs/manglers.md#replacetext) - search and replace text
 * [transform](https://github.com/afogelberg/geomangler/blob/master/docs/manglers.md#transform) - set new projection
