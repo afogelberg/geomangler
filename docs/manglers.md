@@ -82,11 +82,23 @@ keepAll | If only matchning features of the target should be returned. Deafult i
 ---
 
 <a id="merge">#</a> **merge**(featureCollections, options) [<>](https://github.com/afogelberg/geomangler/blob/master/lib/manglers/merge.js)<br>
-Returns merged features.
+Merge feature collections. Returns merged collections.
 
 **Parameters**<br>
 `featureCollections`<br>
 Array of featureCollections. Current feature collection is included by default.<br>
+`options` *optional object*<br>
+
+---
+
+<a id="move">#</a> **move**(deltaX, deltaY, options) [<>](https://github.com/afogelberg/geomangler/blob/master/lib/manglers/move.js)<br>
+Move features based on given delta x and y values. Returns moved features.
+
+**Parameters**<br>
+`deltaX`<br>
+Delta X to move.<br>
+`deltaY`<br>
+Delta Y to move.<br>
 `options` *optional object*<br>
 
 ---
