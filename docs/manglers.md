@@ -35,7 +35,7 @@ Returns features with changed geometry type.
 `source`<br>
 The current geometry type. Currently multipolygon is available.<br>
 `destination`<br>
-The destination geometry type to change to. Currently polygon is available.<br>
+The destination geometry type to change to. Currently Multipolygon to Polygon, Multiline to Line and Multipoint to Point are available.<br>
 `options` *optional object*<br>
 features | Optional features to use.<br>
 
