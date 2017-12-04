@@ -37,6 +37,7 @@
     "babel-polyfill": "^6.26.0",
     "bluebird": "^3.5.0",
     "csvjson": "^4.3.4",
+    "express": "^4.16.2",
     "json2csv": "^3.11.2",
     "jsonfile": "^2.4.0",
     "ol": "^4.4.1",
