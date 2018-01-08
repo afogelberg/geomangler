@@ -1,15 +1,17 @@
-var express = require('express');
+const express = require('express');
+const routes = require('./routes/index');
 
 module.exports = function server(opt_options) {
-  var options = opt_options || {};
+  const options = opt_options || {};
+  const port = options.port || 3000;
 
-  var app = express();
+  const app = express();
 
   app.get('/', function (req, res) {
-    res.send('hello world');
+    res.send('Geomangler server');
   });
 
-  var server = app.listen(3000, function () {
+  const server = app.listen(port, function () {
     var host = server.address().address
     var port = server.address().port
 

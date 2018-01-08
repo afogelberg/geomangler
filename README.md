@@ -1,5 +1,5 @@
 # Geomangler
-Geomangler is a utility library to process and transform geodata in Node.js. This is a small weight and fast alternative to for example FME.
+Geomangler is a utility library to process and transform geodata in Node.js. It can also be used with the built in express server.
 
 # Installing
 Git and Node.js (6 or higher) is required.
@@ -33,6 +33,7 @@ gm.save('geojson', 'out file name', {
 
 * [add](https://github.com/afogelberg/geomangler/blob/master/docs/general.md#add) - add source from file.
 * [save](https://github.com/afogelberg/geomangler/blob/master/docs/general.md#save) - save source to file.
+* [server](https://github.com/afogelberg/geomangler/blob/master/docs/general.md#server) - start/use an express server.
 
 ### [Manglers](https://github.com/afogelberg/geomangler/blob/master/docs/manglers.md)
 

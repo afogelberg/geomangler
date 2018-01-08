@@ -28,3 +28,12 @@ File name<br>
 format specific options
 
 ---
+
+<a id="server">#</a> **server**(options) [<>](https://github.com/afogelberg/blob/master/server/server.js)<br>
+Starts the built in express server.
+
+**Parameters**<br>
+`options` *optional object*<br>
+port | server port to use. Default is 3000.
+
+---
