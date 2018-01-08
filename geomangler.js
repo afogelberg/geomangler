@@ -2,11 +2,16 @@ global.window = {};
 global.navigator = {
   userAgent: ''
 };
-var init = require('./lib/init')();
-var manglers = require('./lib/manglers');
-var helpers = require('./lib/helpers');
-var file = require('./lib/file');
+const init = require('./lib/init');
+const manglers = require('./lib/manglers');
+const helpers = require('./lib/helpers');
+const file = require('./lib/file');
+const server = require('./server/server');
 
-module.exports = function() {
-  return Object.assign({}, file, manglers, helpers);
+module.exports = function(opt_options) {
+  const options = opt_options || {};
+  init(options);
+  let geomangler = Object.assign({}, file, manglers, helpers);
+  geomangler.server = server;
+  return geomangler;
 }();
