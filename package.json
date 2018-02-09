@@ -38,6 +38,7 @@
     "bluebird": "^3.5.0",
     "csvjson": "^4.3.4",
     "express": "^4.16.2",
+    "jsdom": "^11.5.1",
     "json2csv": "^3.11.2",
     "jsonfile": "^2.4.0",
     "ol": "^4.4.1",
@@ -47,7 +48,8 @@
     "source-map-support": "^0.4.18",
     "topojson": "^2.0.0",
     "xml2js": "^0.4.17",
-    "xmlbuilder": "^9.0.4"
+    "xmlbuilder": "^9.0.4",
+    "xmlserializer": "^0.6.1"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
