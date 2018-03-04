@@ -66,6 +66,15 @@ exclude | Negative search. Feature will be returned if no match. Default is fals
 
 ---
 
+<a id="flipcoordinates">#</a> **flipCoordinates**(options) [<>](https://github.com/afogelberg/geomangler/blob/master/lib/manglers/flipcoordinates.js)<br>
+Flips the axis ordering. Returns features with flipped coordinates.
+
+**Parameters**<br>
+`options` *optional object*<br>
+features | Optional features to use.<br>
+
+---
+
 <a id="joinfeatures">#</a> **joinFeatures**(source, field, options) [<>](https://github.com/afogelberg/geomangler/blob/master/lib/manglers/joinfeatures.js)<br>
 Returns joined features.
 

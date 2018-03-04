@@ -1,5 +1,5 @@
 # Geomangler
-Geomangler is a utility library to process and transform geodata in Node.js. It can also be used with the built in express server.
+Geomangler is a utility library to process and transform geodata in Node.js. It can also be used as a geospatial server with the built in express server.
 
 # Installing
 Git and Node.js (6 or higher) is required.
@@ -16,7 +16,7 @@ or
 # Getting started
 It's easy to get started. Just require geomangler and start to mangle your geodata, as in this example.
 ```
-var gm = require('geomangler');
+const gm = require('geomangler');
 
 gm.add('geojson', 'in file name');
 gm.buffer(5);
@@ -25,6 +25,19 @@ gm.save('geojson', 'out file name', {
   epsgCode: 'EPSG:3010'
 });
 
+```
+
+# Using Geomangler as a server
+Geomangler can also be used as server, for example like this.
+```
+const gm = require('geomangler');
+const gmscript = require('./scripts/gmscript');
+
+const server = gm.server({
+  port: '3011'
+});
+
+server.post('/geomangler', gmscript);
 ```
 
 # Api reference
@@ -42,6 +55,7 @@ gm.save('geojson', 'out file name', {
 * [changeGeometryType](https://github.com/afogelberg/geomangler/blob/master/docs/manglers.md#changegeometrytype) - change geometry type.
 * [deleteFields](https://github.com/afogelberg/geomangler/blob/master/docs/manglers.md#deletefields) - deletes fields.
 * [filterByText](https://github.com/afogelberg/geomangler/blob/master/docs/manglers.md#filterbytext) - filter features by text.
+* [flipCoordinates](https://github.com/afogelberg/geomangler/blob/master/docs/manglers.md#flipcoordinates) - flip the axis ordering.
 * [joinFeatures](https://github.com/afogelberg/geomangler/blob/master/docs/manglers.md#joinfeatures) - join features by common field
 * [merge](https://github.com/afogelberg/geomangler/blob/master/docs/manglers.md#merge) - merge feature collections
 * [move](https://github.com/afogelberg/geomangler/blob/master/docs/manglers.md#move) - move features
