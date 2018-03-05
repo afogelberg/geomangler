@@ -28,7 +28,7 @@ gm.save('geojson', 'out file name', {
 ```
 
 # Using Geomangler as a server
-Geomangler can also be used as server, for example like this.
+Geomangler can also be used as a server, for example like this.
 ```
 const gm = require('geomangler');
 const gmscript = require('./scripts/gmscript');

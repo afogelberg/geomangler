@@ -17,7 +17,7 @@ format specific options
 ---
 
 <a id="read">#</a> **read**(format, features, options) [<>](https://github.com/afogelberg/geomangler/blob/master/lib/read.js)<br>
-Read features in given format. Supported formats are csv, GeoJSON, TopoJSON, gml and json.
+Read features in given format. Supported formats are csv, GeoJSON, TopoJSON, gml and json. Features are returned and the current feature collection is updated.
 
 **Parameters**<br>
 `format`<br>
