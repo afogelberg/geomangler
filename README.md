@@ -59,7 +59,7 @@ server.post('/geomangler', gmscript);
 * [joinFeatures](https://github.com/afogelberg/geomangler/blob/master/docs/manglers.md#joinfeatures) - join features by common field
 * [merge](https://github.com/afogelberg/geomangler/blob/master/docs/manglers.md#merge) - merge feature collections
 * [move](https://github.com/afogelberg/geomangler/blob/master/docs/manglers.md#move) - move features
-* [renameFields](https://github.com/afogelberg/geomangler/blob/master/docs/manglers.md#renameFields) - rename fields
+* [renameFields](https://github.com/afogelberg/geomangler/blob/master/docs/manglers.md#renamefields) - rename fields
 * [replaceText](https://github.com/afogelberg/geomangler/blob/master/docs/manglers.md#replacetext) - search and replace text
 * [transform](https://github.com/afogelberg/geomangler/blob/master/docs/manglers.md#transform) - set new projection
 
