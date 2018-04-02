@@ -1,4 +1,6 @@
 node_modules
 npm-debug-log
 data
+scripts
+build/vendor
 npm-debug.log

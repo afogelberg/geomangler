@@ -1,3 +1,4 @@
+require('module-alias/register');
 const jsdom = require("jsdom");
 const { JSDOM } = jsdom;
 const XMLSerializer = require('./lib/utils/xml');

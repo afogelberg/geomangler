@@ -19,8 +19,7 @@
     "url": "https://github.com/afogelberg/geomangler.git"
   },
   "scripts": {
-    "build-ol": "babel node_modules/ol --out-dir node_modules/ol",
-    "preinstall": "npm install --ignore-scripts",
+    "build-ol": "babel node_modules/ol --out-dir build/vendor/ol --ignore node_modules",
     "postinstall": "npm run build-ol"
   },
   "babel": {
@@ -30,6 +29,9 @@
     "plugins": [
       "add-module-exports"
     ]
+  },
+  "_moduleAliases": {
+    "@ol": "build/vendor/ol"
   },
   "author": "Andreas Fogelberg",
   "license": "MIT",
@@ -41,6 +43,7 @@
     "jsdom": "^11.5.1",
     "json2csv": "^3.11.2",
     "jsonfile": "^2.4.0",
+    "module-alias": "^2.0.6",
     "ol": "^4.4.1",
     "proj4": "^2.3.15",
     "request": "^2.75.0",
