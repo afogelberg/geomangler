@@ -1,1 +1,14 @@
-{"extends": "airbnb-base"}
+{
+  "extends": "airbnb-base",
+  "rules": {
+    "no-console": "off",
+    "no-param-reassign": "off",
+    "import/no-unresolved": "off",
+    "new-cap": "off"
+  },
+  "globals": {
+    "document": true,
+    "DOMParser": true,
+    "XMLSerializer": true
+  }
+}
