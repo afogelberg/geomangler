@@ -1,7 +1,10 @@
 require('module-alias/register');
-const jsdom = require("jsdom");
+
+const jsdom = require('jsdom');
+
 const { JSDOM } = jsdom;
 const XMLSerializer = require('./lib/utils/xml');
+
 const dom = new JSDOM().window;
 global.window = {};
 global.document = dom.document;
@@ -10,18 +13,17 @@ global.Node = dom.Node;
 global.DOMParser = dom.DOMParser;
 global.XMLSerializer = XMLSerializer;
 global.navigator = {
-  userAgent: ''
+  userAgent: '',
 };
 
 const init = require('./lib/init');
 const manglers = require('./lib/manglers');
 const helpers = require('./lib/helpers');
 const misc = require('./lib/misc');
-const server = require('./server/server');
 
-module.exports = function(opt_options) {
-  const options = opt_options || {};
+const geomangler = (function geomangler(options = {}) {
   init(options);
-  let geomangler = Object.assign({}, misc, manglers, helpers);
-  return geomangler;
-}();
+  return Object.assign({}, misc, manglers, helpers);
+}());
+
+module.exports = geomangler;
