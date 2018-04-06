@@ -1,0 +1,8 @@
+{
+"type": "FeatureCollection",
+"name": "test-point",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:EPSG::3857" } },
+"features": [
+{ "type": "Feature", "properties": { "name": "Westeras", "type": "city" }, "geometry": { "type": "Point", "coordinates": [ 1841734.11, 8313842.61 ] } }
+]
+}
