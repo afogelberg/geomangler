@@ -45,6 +45,7 @@ server.post('/geomangler', gmscript);
 ### [General](https://github.com/afogelberg/geomangler/blob/master/docs/general.md)
 
 * [add](https://github.com/afogelberg/geomangler/blob/master/docs/general.md#add) - add source from file.
+* [db](https://github.com/afogelberg/geomangler/blob/master/docs/general.md#db) - create a db connection.
 * [read](https://github.com/afogelberg/geomangler/blob/master/docs/general.md#read) - read features from a format.
 * [save](https://github.com/afogelberg/geomangler/blob/master/docs/general.md#save) - save source to file.
 * [server](https://github.com/afogelberg/geomangler/blob/master/docs/general.md#server) - start/use an express server.

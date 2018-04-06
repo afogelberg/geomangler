@@ -16,6 +16,17 @@ format specific options
 
 ---
 
+<a id="db">#</a> **db**(dbType, options) [<>](https://github.com/afogelberg/geomangler/blob/master/lib/utils/dbconnect.js)<br>
+Creates and returns a [knex](http://knexjs.org) db connection. This connection can be used to make and read queries for the currently supported db formats.
+
+**Parameters**<br>
+`dbType`<br>
+Database type.<br>
+`options` *connection object*<br>
+the connection settings.
+
+---
+
 <a id="read">#</a> **read**(format, features, options) [<>](https://github.com/afogelberg/geomangler/blob/master/lib/read.js)<br>
 Read features in given format. Supported formats are csv, GeoJSON, TopoJSON, gml and json. Features are returned and the current feature collection is updated.
 
