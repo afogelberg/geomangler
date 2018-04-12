@@ -2,7 +2,9 @@ require('module-alias/register');
 
 const jsdom = require('jsdom');
 
-const { JSDOM } = jsdom;
+const {
+  JSDOM
+} = jsdom;
 const XMLSerializer = require('./lib/utils/xml');
 
 const dom = new JSDOM().window;
@@ -13,7 +15,7 @@ global.Node = dom.Node;
 global.DOMParser = dom.DOMParser;
 global.XMLSerializer = XMLSerializer;
 global.navigator = {
-  userAgent: '',
+  userAgent: ''
 };
 
 const init = require('./lib/init');

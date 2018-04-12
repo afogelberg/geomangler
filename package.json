@@ -19,7 +19,7 @@
     "url": "https://github.com/afogelberg/geomangler.git"
   },
   "scripts": {
-    "build-ol": "babel node_modules/ol --out-dir build/vendor/ol --ignore node_modules",
+    "build-ol": "babel node_modules/ol --out-dir build/vendor/ol --ignore ol/node_modules",
     "postinstall": "npm run build-ol"
   },
   "babel": {
