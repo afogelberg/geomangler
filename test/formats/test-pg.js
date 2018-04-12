@@ -1,6 +1,6 @@
 /* Test requires a pg database test with a table including data
-** from fixtures/test-point.geojson.
-*/
+ ** from fixtures/test-point.geojson.
+ */
 
 const test = require('tape');
 const gm = require('../../geomangler');
@@ -10,7 +10,7 @@ test('pg-0', (assert) => {
   const message = 'Should return feature with valid coordinates';
 
   gm.add('pg', 'test-point', {
-    connection,
+    connection
   })
     .then((features) => {
       const actual = features[0].getGeometry().getCoordinates();
@@ -28,7 +28,7 @@ test('pg-1', (assert) => {
   `;
 
   gm.read('pg', query, {
-    connection,
+    connection
   })
     .then((features) => {
       const actual = features[0].getGeometry().getCoordinates();
@@ -41,9 +41,11 @@ test('pg-1', (assert) => {
 test('pg-2', (assert) => {
   const message = 'Should return feature with valid coordinates';
 
-  const conn = gm.db('pg', { connection });
+  const conn = gm.db('pg', {
+    connection
+  });
   gm.add('pg', 'test-point', {
-    connectionPool: conn,
+    connectionPool: conn
   })
     .then((features) => {
       const actual = features[0].getGeometry().getCoordinates();
