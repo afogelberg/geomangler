@@ -1,6 +1,6 @@
 {
   "name": "geomangler",
-  "version": "1.3.0",
+  "version": "1.3.1",
   "description": "Geomangler is a utility library and server to process and transform spatial data",
   "keywords": [
     "mapping",
@@ -20,6 +20,7 @@
   },
   "scripts": {
     "build-ol": "babel node_modules/ol --out-dir build/vendor/ol --ignore ol/node_modules",
+    "preinstall": "npm install --ignore-scripts",
     "postinstall": "npm run build-ol"
   },
   "babel": {
