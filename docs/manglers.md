@@ -15,6 +15,15 @@ features | Optional features to use.
 
 ---
 
+<a id="center">#</a> **center**(options) [<>](https://github.com/afogelberg/geomangler/blob/master/lib/manglers/center.js)<br>
+Returns features with the center coordinates of the geometry for each feature.  
+
+**Parameters**<br>
+`options` *optional object*<br>
+features | Optional features to use.<br>
+
+---
+
 <a id="changecase">#</a> **changeCase**(type, options) [<>](https://github.com/afogelberg/geomangler/blob/master/lib/manglers/changecase.js)<br>
 Returns features with changed case of chosen fields.  
 
@@ -85,6 +94,7 @@ Source of features to join the target source. Default target source is current f
 Field of the source to use for the join<br>
 `options` *optional object*<br>
 features | Optional features to use.<br>
+geometrySource | Option to use the geometry of the source or target. The options are 'source' or 'target'. Default is 'target'.
 targetField | Target field to use for join. Default is source field.<br>
 keepAll | If only matchning features of the target should be returned. Deafult is true.<br>
 

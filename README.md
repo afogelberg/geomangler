@@ -54,6 +54,7 @@ server.post('/geomangler', gmscript);
 ### [Manglers](https://github.com/afogelberg/geomangler/blob/master/docs/manglers.md)
 
 * [buffer](https://github.com/afogelberg/geomangler/blob/master/docs/manglers.md#buffer) - buffer points.
+* [center](https://github.com/afogelberg/geomangler/blob/master/docs/manglers.md#center) - get center of geometry.
 * [changeCase](https://github.com/afogelberg/geomangler/blob/master/docs/manglers.md#changecase) - changes case.
 * [changeGeometryType](https://github.com/afogelberg/geomangler/blob/master/docs/manglers.md#changegeometrytype) - change geometry type.
 * [deleteFields](https://github.com/afogelberg/geomangler/blob/master/docs/manglers.md#deletefields) - deletes fields.
