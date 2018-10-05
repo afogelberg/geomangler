@@ -1,5 +1,5 @@
 # Geomangler
-Geomangler is a utility library to process and transform geodata in Node.js. It can also be used as a geospatial server with the built in express server. Currently supported formats are csv, GeoJSON, TopoJSON, gml and json.
+Geomangler is a utility library to process and transform geodata in Node.js. It can also be used as a geospatial server with the built in express server. Supported formats are csv, GeoJSON, TopoJSON, gml, json, PostGIS, SQL Server among others.
 
 # Installing
 Git and Node.js (6 or higher) is required.
