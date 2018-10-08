@@ -113,3 +113,25 @@ test('joinFeatures-3', (assert) => {
   assert.same(actual, expected, message);
   assert.end();
 });
+
+test('joinFeatures-4', (assert) => {
+  const message = 'Should return joined features original length of features, with *:1 relation';
+  const feature1 = sampleFeature1.clone();
+  const feature2 = sampleFeature2.clone();
+  const feature3 = sampleFeature3.clone();
+  const features = [feature1, feature2];
+  const sourceFeatures = [feature3];
+
+  const joined = gm.joinFeatures(sourceFeatures, 'fkey', {
+    features,
+    geometrySource: 'source',
+    targetField: 'id',
+    keepAll: true
+  });
+
+  const actual = joined.length;
+  const expected = 2;
+
+  assert.same(actual, expected, message);
+  assert.end();
+});
